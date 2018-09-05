@@ -6,3 +6,7 @@ ENV NPM_CONFIG_LOGLEVEL=warn \
 
 RUN npm install -g the-a11y-machine
 
+# Install rsync
+RUN \
+  echo -e "\nInstalling rsync..." && \
+  apt-get -y install rsync
