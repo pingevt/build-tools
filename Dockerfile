@@ -14,6 +14,16 @@ RUN \
   echo -e "\nInstalling base packages..." && \
   apt-get install -y git sudo software-properties-common python-software-properties libx11-xcb1
 
+# Install jq
+RUN \
+  echo -e "\nInstalling jq..." && \
+  apt-get -y install jq
+
+# Install wget
+RUN \
+  echo -e "\nInstalling wget..." && \
+  apt-get -y install wget
+
 # Install A11y Machine Globally
 RUN npm install -g the-a11y-machine
 
